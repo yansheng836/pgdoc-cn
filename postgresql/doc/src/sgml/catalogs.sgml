@@ -12113,9 +12113,9 @@ ________________________________________________________-->
       </para>
       <para>
        <structfield>provolatile</structfield>说明函数是仅仅只依赖于它的输入参数，还是会被外部因素影响。
-       值<literal>i</literal>表示<quote>不变的</quote>函数，它对于相同的输入总是输出相同的结果。
-       值<literal>s</literal>表示<quote>稳定的</quote>函数，它的结果（对于固定输入）在一次扫描内不会变化。
-       值<literal>v</literal>表示<quote>不稳定的</quote>函数，它的结果在任何时候都可能变化（使用<literal>v</literal>页表示函数具有副作用，所以对它们的调用无法得到优化）
+       值<literal>i</literal>表示<quote>immutable 不变的</quote>函数，它对于相同的输入总是输出相同的结果。
+       值<literal>s</literal>表示<quote>stable 稳定的</quote>函数，它的结果（对于固定输入）在一次扫描内不会变化。
+       值<literal>v</literal>表示<quote>volatile 不稳定的</quote>函数，它的结果在任何时候都可能变化（使用<literal>v</literal>页表示函数具有副作用，所以对它们的调用无法得到优化）
       </para></entry>
      </row>
 <!-- pgdoc-cn_end sig_en=adb21fc231aaeb73a3119830ccb699ec -->
